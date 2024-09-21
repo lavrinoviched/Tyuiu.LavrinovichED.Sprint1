@@ -10,7 +10,7 @@ namespace Tyuiu.LavrinovichED.Sprint1.Task0.V8.Test
         {
             DataService ds = new DataService();
             double res = ds.Calculate();
-            Assert.AreEqual (1.875, number); 
+            Assert.AreEqual (1.875, res); 
         }
     }
 }
