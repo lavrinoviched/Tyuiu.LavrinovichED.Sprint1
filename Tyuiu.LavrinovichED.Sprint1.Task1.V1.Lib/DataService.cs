@@ -6,7 +6,7 @@ namespace Tyuiu.LavrinovichED.Sprint1.Task1.V1.Lib
     {
         public double Calculate(double a, double x, double y)
         {
-            return x / 3 / y + 6 * a; 
+            return (x / 3) / y + 6 * a; 
         }
     }
 }
