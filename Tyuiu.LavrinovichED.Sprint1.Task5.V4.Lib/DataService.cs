@@ -6,7 +6,7 @@ namespace Tyuiu.LavrinovichED.Sprint1.Task5.V4.Lib
     {
         public int SecondsToHours(int time)
         {
-            int res = time / 4419; 
+            int res = time / 3600; 
             return res; 
         }
     }
