@@ -1,14 +1,6 @@
-﻿using Tyuiu.LavrinovichED.Sprint1.Task2.V8.Lib; 
+﻿using Tyuiu.LavrinovichED.Sprint1.Task3.V7.Lib; 
 
-//ЗАДАНИЕ
-//Написать программу, которая запрашивает у пользователя исходные данные,
-//выполняет указанные расчёты и печатает результат на экране.
-//РАСЧЁТЫ: Известны длины стороны прямоугольникаю Вычислить периметр прямоугольника.
-//Длина первой стороны прямоугольника (целое число).
-//Длина второй длины прямоугольника (целое число)
-//Периметр прямоугольника (целое число)
-
-namespace Tyuiu.LavrinovichED.Sprint1.Task2.V8
+namespace Tyuiu.LavrinovichED.Sprint1.Task3.V7
 {
     internal class Program
     {
@@ -19,9 +11,9 @@ namespace Tyuiu.LavrinovichED.Sprint1.Task2.V8
             Console.Title = "Спринт #1 | Выполнила: Лавринович Е.Д. | АСОиУБ - 24-1";
             Console.WriteLine("********************************************************************************************");
             Console.WriteLine("* Спринт #1                                                                                *");
-            Console.WriteLine("* Тема: Арифметические операторы в C#                                                      *");
-            Console.WriteLine("* Задание #2                                                                               *");
-            Console.WriteLine("* Вариант #8                                                                               *");
+            Console.WriteLine("* Тема: Операторы составного присваивания                                                  *");
+            Console.WriteLine("* Задание #3                                                                               *");
+            Console.WriteLine("* Вариант #7                                                                               *");
             Console.WriteLine("* Выполнила: Лавринович Елизавета Дмитриевна | АСОиУБ - 24-1                               *");
             Console.WriteLine("********************************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                                 *");
@@ -32,18 +24,16 @@ namespace Tyuiu.LavrinovichED.Sprint1.Task2.V8
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                         *");
             Console.WriteLine("********************************************************************************************");
 
-            int a, b;
-            Console.WriteLine("Введите значение а = ");
-            a = Convert.ToInt32(Console.ReadLine());
+            double verst; 
+            Console.WriteLine("Введите расстояние в верстах = ");
+            verst = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите значение b = ");
-            b = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("********************************************************************************************");
             Console.WriteLine("*РЕЗУЛЬТАТ:                                                                                *");
             Console.WriteLine("********************************************************************************************");
 
-            Console.WriteLine("Периметр прямоугольника = " + ds.CalculatePerimetr(a, b)); 
+            Console.WriteLine("100 верст - это " + ds.VerstsToKilometers(verst) + " км.");
 
             Console.ReadLine();
         }
